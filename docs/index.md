@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome Jean-Philippe to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Pmp-Solutions/PmpTeamMate-docs/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
