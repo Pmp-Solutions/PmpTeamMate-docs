@@ -3,18 +3,34 @@ module.exports = {
     base: '/PMPTEAMMATE-DOCS/',
     plugins: [
       '@vuepress/active-header-links',
-      // workaround SSR mismatch
-      'dehydrate', {
-        sidebarLinkSelector: '.sidebar-link',
-    headerAnchorSelector: '.header-anchor'
-      }
     ],
     themeConfig: {
       lastUpdated: 'Last Updated',
-      /* sidebar: [
-        '/',
-        '/page-1',
-        '/page-2'
-      ] */
+      sidebar: 
+        [
+          
+          {
+            title: 'Démarrage et installation',
+            path: '/installation/',
+            collapsable: false,
+            children: [
+              ['/installation/install/', 'Installer PMP TeamMate'],
+              ['/installation/users/', 'Gestion des utilisateurs à PMP TeamMate?'],       
+              ['/installation/dashboards/', 'Installer les tableaux de bord sur des téléviseurs']
+           ]
+          },
+          {
+            title: 'Apprentissage et utilisation',
+            path: '/apprentissage/',
+            collapsable: false,
+            children: [
+              ['/apprentissage/gettingStarted/', 'Bien démarrer avec PMP Solutions'],
+              ['/apprentissage/pmpteammate/', 'PMP TeamMate – Prise en main rapide'],
+           ]
+          },
+        ]
+      
+      
+    
     }
   }
