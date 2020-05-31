@@ -11,7 +11,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: Build and Deploy
-      uses: docs/github-pages-deploy-action@master
+      uses: docs/PmpTeamMate-docs@master
       env:
         ACCESS_TOKEN: b2712a1e59af8f32dc54019a9801e36094e6e409
         BUILD_DIR: docs/.vuepress/dist/ # The folder, the action should deploy.
