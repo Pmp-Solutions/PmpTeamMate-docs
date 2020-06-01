@@ -1,14 +1,12 @@
 module.exports = {
     title: 'Pmp Solutions',
-    base: '/PMPTEAMMATE-DOCS/',
+    /* base: '/PMPTEAMMATE-DOCS/', */
     plugins: [
       '@vuepress/active-header-links',
     ],
     themeConfig: {
       lastUpdated: 'Last Updated',
-      sidebar: 
-        [
-          
+      sidebar: [
           {
             title: 'Démarrage et installation',
             path: '/installation/',
@@ -28,9 +26,6 @@ module.exports = {
               ['/apprentissage/pmpteammate/', 'PMP TeamMate – Prise en main rapide'],
            ]
           },
-        ]
-      
-      
-    
+      ]
     }
   }
