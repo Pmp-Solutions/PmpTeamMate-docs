@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Pmp Solutions',
-    /* base: '/PMPTEAMMATE-DOCS/', */
+    base: '/PmpTeamMate-docs/',
     plugins: [
       '@vuepress/active-header-links',
     ],
