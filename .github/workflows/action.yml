@@ -5,8 +5,9 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  push:
-    branches: [ master ]
+  push:	
+    branches:	
+      - master
   pull_request:
     branches: [ master ]
 
@@ -23,12 +24,11 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs a single command using the runners shell
-    - name: Vuepress deploy
-      uses: jenkey2011/vuepress-deploy@1.0.1
-
+    - name: Deploy to vuepress
+      uses: grasilife/github-pages-deploy-action@v1.2
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO:  Pmp-Solutions/PmpTeamMate-docs
-        TARGET_BRANCH: gh-pages
-        BUILD_SCRIPT: yarn && vuepress build docs
-        BUILD_DIR: ../docs/.vuepress/dist/
+        BASE_BRANCH: master # The branch the action should deploy from.
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: build # The folder the action should deploy.
+        BUILD_SCRIPT: yarn && vuepress build docs # The build script the action should run prior to deploying.
